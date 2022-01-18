@@ -7,5 +7,11 @@ console.log(myURL.href);
 
 //PATH
 const path = require('path');
+const { default: isEmail } = require('validator/lib/isemail');
 console.log(path.dirname(__filename));
 
+//Validator
+
+var validate = require('validator')
+const mymail = "srinath@gmail.com";
+console.log(validate.isEmail(mymail));
